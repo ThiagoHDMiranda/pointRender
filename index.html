@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body id="body">
+    <div id="navBar" class="navBar">
+      <div id="divPointColor">
+        <input id="inputPointColor" type="color" value="#FF0000" />
+      </div>
+      <div id="drawer">
+        <div id="divPointSize">
+          <div id="inputPointSizeContent">
+            <input
+              id="inputPointSize"
+              type="range"
+              value="5"
+              min="1"
+              max="100"
+            />
+            <div id="inputPointSizeControl">
+              <div id="decreaseCount" class="btnControlPointSize">-</div>
+              <div id="addCount" class="btnControlPointSize">+</div>
+            </div>
+          </div>
+        </div>
+        <label id="lblPointSize">5</label>
+      </div>
+    </div>
+    <div id="loked">Loked</div>
+    <div id="title">Click somewhere</div>
+    <div id="explanation">
+      <div>Press "ctrl + c" to choose the point color</div>
+      <div>Press "ctrl + v" to choose the point size</div>
+      <div>Press 'ctrl + x' to lock/unlock color changer and size changer</div>
+      <div>Press "ctrl + z" to undo the last action</div>
+      <div>Press "ctrl + y" to redo the last undone action</div>
+    </div>
+    <div id="bodyPage"></div>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #cccccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 3vh;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+#bodyPage {
+  height: 100vh;
+  width: 100vw;
+  z-index: 4;
+}
+
+.navBar {
+  background-color: aqua;
+  height: 0;
+  width: 0;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 5;
+}
+
+#loked {
+  color: #a3a3a3;
+  padding-left: 2vh;
+  padding-top: 4vh;
+  height: 20vh;
+  width: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  opacity: 0.5;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+#divPointColor {
+  background-color: red;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+  z-index: 6;
+}
+
+#inputPointColor {
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  left: 1vw;
+  opacity: 0;
+}
+
+#drawer {
+  background-color: #cccccc;
+  display: flex;
+  align-items: center;
+  height: 7vh;
+  width: 0.5vw;
+  position: absolute;
+  left: 0;
+  top: 10vh;
+  z-index: 6;
+}
+
+#divPointSize {
+  display: flex;
+  height: 7vh;
+  width: 0.5vw;
+  position: absolute;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+#inputPointSizeContent {
+  padding-left: 1vw;
+}
+
+#inputPointSize {
+  height: 1vh;
+  width: 15vw;
+}
+
+#inputPointSizeControl {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btnControlPointSize {
+  cursor: pointer;
+}
+
+#lblPointSize {
+  background-color: transparent;
+  align-content: center;
+  padding-left: 1.5vh;
+  height: 100%;
+  transition: 0.5s;
+}
+
+#title {
+  font-size: 12vh;
+  position: absolute;
+  top: 30vh;
+}
+
+#explanation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50vh;
+}
