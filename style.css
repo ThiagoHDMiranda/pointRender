@@ -79,6 +79,7 @@ body {
 
 #divPointSize {
   display: flex;
+  align-items: center;
   height: 7vh;
   width: 0.5vw;
   position: absolute;
@@ -124,4 +125,19 @@ body {
   align-items: center;
   position: absolute;
   top: 50vh;
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+  body {
+    font-size: 3vw;
+  }
+
+  #title {
+    font-size: 12vw;
+  }
+
+  #inputPointSize {
+    height: 10vh;
+    width: 25vw;
+  }
 }

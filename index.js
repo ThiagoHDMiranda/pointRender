@@ -19,6 +19,19 @@ let drawerIsOpen = false;
 const donePoints = [];
 const pointsRemoved = [];
 
+const screenHeight = window.innerHeight;
+const screenWidth = window.innerWidth;
+
+let widthGreaterThanHeight;
+
+(function screenDimension() {
+  if (screenWidth >= screenHeight) {
+    widthGreaterThanHeight = true;
+    return;
+  }
+  widthGreaterThanHeight = false;
+})();
+
 function undoPoint() {
   const removeDiv = donePoints.pop();
   pointsRemoved.push(removeDiv);
@@ -99,8 +112,13 @@ function closeDrawer() {
 
 function openDrawer() {
   drawerIsOpen = true;
-  divPointSize.style.width = "16vw";
-  lblPointSize.style.paddingLeft = "16.5vw";
+  if (widthGreaterThanHeight) {
+    divPointSize.style.width = "16vw";
+    lblPointSize.style.paddingLeft = "16.5vw";
+    return;
+  }
+  divPointSize.style.width = "26vw";
+  lblPointSize.style.paddingLeft = "26.5vw";
 }
 
 function openColorPicker() {
